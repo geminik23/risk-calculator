@@ -75,7 +75,7 @@ impl RiskManager {
     }
 
     fn calculate_strategy_risk_allocation(&self, strategy: &StrategyProvider) -> f64 {
-        let risk_per_trade = 0.01 * self.account_balance;
+        let risk_per_trade = 0.01 * self.account_balance / strategy.risk_reward_ratio;
         let average_loss = risk_per_trade;
         let loss_rate = 1.0 - strategy.win_rate;
         let expected_weekly_loss = strategy.avg_trades_week as f64 * (loss_rate * average_loss);

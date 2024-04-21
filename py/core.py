@@ -34,7 +34,7 @@ class RiskManager:
 
     def _calculate_strategy_risk_allocation(self, strategy: StrategyProvider) -> float:
         risk_per_trade = 0.01  # 1% of account balance
-        average_loss = risk_per_trade * self.account_balance  # risking 1% per trade
+        average_loss = risk_per_trade * self.account_balance / strategy.risk_reward_ratio  # risking 1% per trade
         loss_rate = 1 - strategy.win_rate  # probability of a losing trade
         expected_weekly_loss = strategy.avg_trades_week * (loss_rate * average_loss)
         return expected_weekly_loss

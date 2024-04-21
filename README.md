@@ -6,6 +6,7 @@ An implementations of the RiskCalculator, a tool designed to compute risk alloca
 
 The risk for each strategy is calculated using the following simple formula:
 
+
 ```
 Expected Weekly Loss = Avg Trades per Week * Loss Rate * (1% of Account Balance)
 Risk Allocation = (Strategy's Expected Weekly Loss / Total Expected Weekly Loss) * Max Loss
