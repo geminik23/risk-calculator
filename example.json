@@ -1,0 +1,6 @@
+[
+    {"name": "Strategy A", "avg_trades_week": 10, "risk_reward_ratio": 2.5, "win_rate": 0.4},
+    {"name": "Strategy B", "avg_trades_week": 15, "risk_reward_ratio": 1.5, "win_rate": 0.5},
+    {"name": "Strategy C", "avg_trades_week": 20, "risk_reward_ratio": 3.0, "win_rate": 0.35},
+    {"name": "Strategy D", "avg_trades_week": 5, "risk_reward_ratio": 2.0, "win_rate": 0.6}
+]
